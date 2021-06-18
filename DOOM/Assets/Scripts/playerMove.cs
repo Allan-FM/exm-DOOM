@@ -7,7 +7,7 @@ public class playerMove : MonoBehaviour
     private float yaw = 0.0f;
     private float pith = 0.0f;
 
-    private float spd = 0.02f;
+    public float spd = 0.02f;
 
     private float speedH = 2.0f;
     private float speedV = 2.0f;
@@ -45,7 +45,7 @@ public class playerMove : MonoBehaviour
         }
 
         yaw += speedH * Input.GetAxis("Mouse X");
-        pith += speedV * Input.GetAxis("Mouse Y");
+        pith -= speedV * Input.GetAxis("Mouse Y");
         transform.eulerAngles = new Vector3(pith,yaw, 0.0f);
 
     }
