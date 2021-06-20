@@ -4,31 +4,45 @@ using UnityEngine;
 
 public class playerMove : MonoBehaviour
 {
-    public float speed;
-
-    Rigidbody rb;
-
     private float yaw = 0.0f;
     private float pitch = 0.0f;
 
-    public float moveCamera;
+    private float speedH = 2.0f;
+    private float speedV = 2.0f;
 
-    // Start is called before the first frame update
+    private float spd = 0.007f;
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
-
-    // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        Vector3 Position = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-        rb.velocity = Position * speed;
+        if (Input.GetKey("w"))
+        {
+            transform.position += (transform.forward * spd);
+        }
+        if(Input.GetKey("s"))
+        {
+            transform.position += (transform.forward * -spd);
+        }
 
-        yaw += moveCamera * Input.GetAxis("Mouse X");
-        pitch -= moveCamera * Input.GetAxis("Mouse Y");
+        if(Input.GetKey("d"))
+        {
+            float dir = transform.eulerAngles.y - 90.0f;
+            Vector3 spdTemp = new Vector3(Mathf.Sign(dir * Mathf.Deg2Rad),0,Mathf.Cos(dir*Mathf.Deg2Rad));
+            transform.position = transform.position + (spdTemp * -spd);
+        }
+
+        if (Input.GetKey("a"))
+        {
+            float dir = transform.eulerAngles.y + 90.0f;
+            Vector3 spdTemp = new Vector3(Mathf.Sign(dir * Mathf.Deg2Rad), 0, Mathf.Cos(dir * Mathf.Deg2Rad));
+            transform.position = transform.position + (spdTemp * -spd);
+        }
+
+        yaw += speedH * Input.GetAxis("Mouse X");
+        pitch -= speedV * Input.GetAxis("Mouse Y");
         transform.eulerAngles = new Vector3(pitch,yaw,0.0f);
     }
 }
