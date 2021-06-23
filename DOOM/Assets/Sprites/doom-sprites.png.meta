@@ -3,11 +3,14 @@ guid: fc8b6b42bf823a34ca6d3e2e925a2823
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8616334284790429599
-    second: doom-sprites-png-Transparent-Images_1
+      213: 4357272189570880907
+    second: doom-sprites_0
   - first:
-      213: 1782795095092399765
-    second: doom-sprites-png-Transparent-Images_2
+      213: -8824787924741002994
+    second: doom-sprites_1
+  - first:
+      213: -52541203045334612
+    second: doom-sprites_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +112,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: doom-sprites-png-Transparent-Images_0
+      name: doom-sprites_0
       rect:
         serializedVersion: 2
         x: 1
@@ -123,40 +126,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e55120dfb75e41a0800000000000000
-      internalID: -6823419904077507102
+      spriteID: b859f0978f3287c30800000000000000
+      internalID: 4357272189570880907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doom-sprites-png-Transparent-Images_1
+      name: doom-sprites_1
       rect:
         serializedVersion: 2
-        x: 184
-        y: 280
-        width: 116
-        height: 133
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1680c098e91ac6880800000000000000
-      internalID: -8616334284790429599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: doom-sprites-png-Transparent-Images_2
-      rect:
-        serializedVersion: 2
-        x: 402
+        x: 186
         y: 279
-        width: 101
+        width: 109
         height: 134
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -165,8 +147,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59e8a4e71b2cdb810800000000000000
-      internalID: 1782795095092399765
+      spriteID: e09e7af532e088580800000000000000
+      internalID: -8824787924741002994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doom-sprites_2
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 282
+        width: 101
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca14960ed06554ff0800000000000000
+      internalID: -52541203045334612
       vertices: []
       indices: 
       edges: []
@@ -174,7 +177,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 1e790e35a7e4e4a46825dd6fb81fd4f0
     internalID: 0
     vertices: []
     indices: 
