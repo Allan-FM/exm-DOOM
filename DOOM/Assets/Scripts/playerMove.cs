@@ -59,4 +59,12 @@ public class playerMove : MonoBehaviour
             Application.LoadLevel(Application.loadedLevel);
         }
     }
+
+    private void OnCollisionEnter(Collision col)
+    {
+        if(col.gameObject.tag == "Porta") 
+        {
+            col.gameObject.GetComponent<MoveDoor>().open = true;
+        }
+    }
 }
