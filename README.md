@@ -10,5 +10,5 @@ Usando Sprites em 2D.
 
  -------
  Falta o som no disparo 
- E a animação do disparo
+ E a animação do disparo💥
  -------
