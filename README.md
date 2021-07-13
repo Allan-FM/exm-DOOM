@@ -1,7 +1,5 @@
 # DOOM
-Recriando o Jogo DOOM
-
-Usando Sprites em 2D.
+Jogo doom recriado na unity com assets 2d pixelda 
 
 <p align="center">
     <img src="Doom.gif" width="550">
@@ -9,6 +7,4 @@ Usando Sprites em 2D.
 </p>
 
  -------
- Falta o som no disparo 
- E a animação do disparo💥
- -------
+
